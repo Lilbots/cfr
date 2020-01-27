@@ -7,6 +7,11 @@ const drone = new ScaleDrone(CLIENT_ID, {
     //name: getRandomName(),
     name: document.getElementById("NAME").value,
     color: getRandomColor(),
+    if(name == null)
+    {
+      name: getRandomName(),
+      document.getElementById("NAME").value = name,
+    }
   },
 });
 
