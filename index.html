@@ -60,14 +60,9 @@
     }
   </style>
 </head>
-<body>
-  <div>
-    <input placeholder="Enter your name..." type="text" id="NAME"/>
-    <input onclick="document.getElementById('next').style.display='block' value="Ok" type="submit"/>
-  </div>
-  
-  <div id="next" class="nextNExt">                                                                                               <
+<body>                                                                                    <
   <div class="members-count">-</div>
+  <input type="text" class="NAME">
   <div class="members-list">-</div>
   <div class="messages"></div>
   <form class="message-form" onsubmit="return false;">
@@ -75,6 +70,5 @@
     <input class="message-form__button" value="Send" type="submit"/>
   </form>
   <script src="./script.js"></script>
-  </div>
 </body>
 </html>
