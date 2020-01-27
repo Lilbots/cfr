@@ -54,9 +54,19 @@
     .message-form__button {
       margin: 10px;
     }
+    .nextNExt
+    {
+      display: none;
+    }
   </style>
 </head>
 <body>
+  <div>
+    <input placeholder="Enter your name..." type="text" id="NAME"/>
+    <input onclick="document.getElementById('next').style.display='block' value="Ok" type="submit"/>
+  </div>
+  
+  <div id="next" class="nextNExt">                                                                                               <
   <div class="members-count">-</div>
   <div class="members-list">-</div>
   <div class="messages"></div>
@@ -65,5 +75,6 @@
     <input class="message-form__button" value="Send" type="submit"/>
   </form>
   <script src="./script.js"></script>
+  </div>
 </body>
 </html>
