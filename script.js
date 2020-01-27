@@ -60,8 +60,8 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
-  const adjs = ["autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark", "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter", "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue", "billowing", "broken", "cold", "damp", "falling", "frosty", "green", "long", "late", "lingering", "bold", "little", "morning", "muddy", "old", "red", "rough", "still", "small", "sparkling", "throbbing", "shy", "wandering", "withered", "wild", "black", "young", "holy", "solitary", "fragrant", "aged", "snowy", "proud", "floral", "restless", "divine", "polished", "ancient", "purple", "lively", "nameless"];
-  const nouns = ["waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning", "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter", "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook", "butterfly", "bush", "dew", "dust", "field", "fire", "flower", "firefly", "feather", "grass", "haze", "mountain", "night", "pond", "darkness", "snowflake", "silence", "sound", "sky", "shape", "surf", "thunder", "violet", "water", "wildflower", "wave", "water", "resonance", "sun", "wood", "dream", "cherry", "tree", "fog", "frost", "voice", "paper", "frog", "smoke", "star"];
+  const adjs = ["automne", "caché", "amer", "brumeux", "silencieux", "vide", "sec", "sombre", "été", "glacé", "délicat", "calme", ​​"blanc "," cool "," printemps "," hiver "," patient "," crépuscule "," aube "," cramoisi "," vaporeux "," patiné "," bleu "," tourbillonnant "," cassé ", "froid", "humide", "tombant", "givré", "vert", "long", "tard", "persistant", "gras", "petit", "matin", "boueux", "vieux "," rouge "," rugueux "," encore "," petit "," mousseux "," lancinant "," timide "," errant "," flétri "," sauvage "," noir "," jeune ", "saint", "solitaire", "parfumé", "vieilli", "neigeux", "fier", "floral", "agité", "divin", "poli", "ancien", "violet", "vif "," sans nom "];
+  const nouns = ["cascade", "rivière", "brise", "lune", "pluie", "vent", "mer", "matin", "neige", "lac", "coucher de soleil", "pin", "ombre "," feuille "," aube "," paillettes "," forêt "," colline "," nuage "," prairie "," soleil "," clairière "," oiseau "," ruisseau "," papillon ", "buisson", "rosée", "poussière", "champ", "feu", "fleur", "luciole", "plume", "herbe", "brume", "montagne", "nuit", "étang "," obscurité "," flocon de neige "," silence "," son "," ciel "," forme "," surf "," tonnerre "," violet "," eau "," fleurs sauvages "," vague ", "eau", "résonance", "soleil", "bois", "rêve", "cerise", "arbre", "brouillard", "gel", "voix", "papier", "grenouille", "fumée" ", "étoile"];
   return (
     adjs[Math.floor(Math.random() * adjs.length)] +
     "_" +
@@ -107,7 +107,7 @@ function createMemberElement(member) {
 }
 
 function updateMembersDOM() {
-  DOM.membersCount.innerText = `${members.length} users in room:`;
+  DOM.membersCount.innerText = `${members.length} Nombre de personne dans la conversation:`;
   DOM.membersList.innerHTML = '';
   members.forEach(member =>
     DOM.membersList.appendChild(createMemberElement(member))
